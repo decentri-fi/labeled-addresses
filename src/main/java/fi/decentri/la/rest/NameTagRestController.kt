@@ -21,7 +21,7 @@ class NameTagRestController(
     }
 
     @GetMapping("/{address}")
-    fun byAdress(@PathVariable("address") address: String) = runBlocking {
+    fun byAddress(@PathVariable("address") address: String) = runBlocking {
         nameTagService.getByAddress(address)?.let {
             ResponseEntity.ok(it)
         } ?: ResponseEntity.notFound().build()
