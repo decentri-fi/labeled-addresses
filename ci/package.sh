@@ -1,0 +1,1 @@
+docker build -t defitrack/labeled-addresses:${BRANCH_NAME} . -f ci/Dockerfile
