@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
-@RequestMapping("/nametags")
+@RequestMapping("/")
 class NameTagRestController(
     private val nameTagService: NameTagService
 ) {
