@@ -21,7 +21,7 @@ class NameTagService(
         logger.info("Initializing NameTagService")
         nameTagRepository.findAll().forEach {
             cache.put(
-                it.address.lowercase(),
+                it.nameTagId.lowercase(),
                 it.tag
             )
         }
